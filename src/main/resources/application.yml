@@ -1,0 +1,20 @@
+# Spring Boot configuration
+spring:
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://flora.db.elephantsql.com:5432/fpcejbrx
+    username: fpcejbrx
+    password: 3N7slOgRUg-vk7quZ0berR2nncecBFWx
+  # JPA properties
+  jpa:
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+# Server configuration
+server:
+  port: 8083
+# Security configuration
+security:
+  user:
+    name: user
+password: user
